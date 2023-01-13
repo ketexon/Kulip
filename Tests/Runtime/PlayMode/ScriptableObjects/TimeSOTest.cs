@@ -78,7 +78,7 @@ public class TimeSOTest
         const float epsilon = 0.2f;
 
         bool pauseEventInvoked = false, resumeEventInvoked = false;
-        time.PauseChangedEvent += p =>
+        time.PausedChangedEvent += p =>
         {
             if (p) pauseEventInvoked = true;
             else resumeEventInvoked = true;
