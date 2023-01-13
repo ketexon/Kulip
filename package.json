@@ -1,0 +1,16 @@
+{
+  "name": "com.ketexon.kulip",
+  "version": "0.1.0",
+  "displayName": "Kulip",
+  "description": "Ketexon Unity Utility Library",
+  "unity": "2021.3",
+  "unityRelease": "16f1",
+ "keywords": [
+    "util"
+  ],
+  "author": {
+    "name": "Ketexon",
+    "email": "xketexon@gmail.com",
+    "url": "http://www.ketexon.xyz"
+  }
+}
