@@ -1,0 +1,16 @@
+{
+    "name": "Kulip.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:133e43767f1ca5641b796e4ba4ecd1e4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
