@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Kulip
 {
     [CreateAssetMenu(fileName = "Time", menuName = "Kulip/Time/Time")]
-    public abstract class TimeSO : TimeSOBase
+    public class TimeSO : TimeSOBase
     {
         public System.Action<bool> PauseChangedEvent;
         public System.Action TimeZeroedEvent;
@@ -95,6 +95,15 @@ namespace Kulip
             _totalPauseFixedDuration = UnityEngine.Time.fixedTime;
             TimeZeroedEvent?.Invoke();
 
+        }
+
+        virtual protected void OnEnable()
+        {
+            _paused = false;
+            _lastPauseUnityTime = 0f;
+            _lastPauseUnityFixedTime = 0f;
+            _totalPauseDuration = 0f;
+            _totalPauseFixedDuration = 0f;
         }
     }
 }

@@ -7,6 +7,8 @@ namespace Kulip
     [CreateAssetMenu(fileName = "ScalableTime", menuName = "Kulip/Time/ScalableTime")]
     public class ScalableTimeSO : TimeSO
     {
+        [SerializeField] float _defaultScale = 1f;
+
         public System.Action<float> ScaleChangedEvent;
 
         public float Scale { 
@@ -21,8 +23,8 @@ namespace Kulip
                         "Scale must be nonnegative"
                     );
                 }
-                _scale = value;
                 ScaleChanged();
+                _scale = value;
                 ScaleChangedEvent?.Invoke(_scale);
             }
         }
@@ -58,6 +60,18 @@ namespace Kulip
 
             _lastScaleChangedTime = base.Time;
             _lastScaleChangedFixedTime = base.FixedTime;
+        }
+
+        override protected void OnEnable()
+        {
+            base.OnEnable();
+            _scale = _defaultScale;
+
+            _lastScaleChangedTime = 0f;
+            _lastScaleChangedScaledTime = 0f;
+
+            _lastScaleChangedFixedTime = 0f;
+            _lastScaleChangedScaledFixedTime = 0f;
         }
     }
 }
