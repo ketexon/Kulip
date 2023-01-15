@@ -1,12 +1,14 @@
 {
-    "name": "Ketexon.Kulip.PlayModeTests",
+    "name": "Ketexon.Kulip.EditModeTests",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Ketexon.Kulip"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
