@@ -12,5 +12,9 @@
     "name": "Ketexon",
     "email": "xketexon@gmail.com",
     "url": "http://www.ketexon.xyz"
+  },
+  
+  "dependencies": {
+    "dev.yarnspinner.unity": "2.2.3"
   }
 }

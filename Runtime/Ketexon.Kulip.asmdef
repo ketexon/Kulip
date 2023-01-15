@@ -1,7 +1,9 @@
 {
     "name": "Ketexon.Kulip",
     "rootNamespace": "Kulip",
-    "references": [],
+    "references": [
+        "GUID:34aa492b82754644eac2f903cd496268"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
