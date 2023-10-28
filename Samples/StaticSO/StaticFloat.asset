@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12a2935c61440e48858a5fed4438537, type: 3}
   m_Name: StaticFloat
   m_EditorClassIdentifier: 
-  _defaultValue: 50
+  _defaultValue: 0
